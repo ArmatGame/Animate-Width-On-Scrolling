@@ -1,0 +1,43 @@
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:first-child {
+    background-color: #aaa;
+  }
+
+  &:nth-child(2) {
+    background-color: #bbb;
+  }
+
+  &:nth-child(3) {
+    background-color: #aaa;
+  }
+
+  &:last-of-type {
+    background-color: #eee;
+  }
+}
+
+.three {
+  .progress {
+  position: relative;
+  width: 500px;
+  height: 30px;
+  background-color: white;
+  margin: 10px;
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: indianred;
+      transition: width 0.3s linear;
+      -webkit-transition: width 0.3s linear;
+      -moz-transition: width 0.3s linear;
+      -ms-transition: width 0.3s linear;
+      -o-transition: width 0.3s linear;
+}
+  }
+}
